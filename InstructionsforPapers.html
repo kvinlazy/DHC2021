@@ -89,13 +89,13 @@
 
                 <p>The instructions for the submission are available <a href="Template_2019.docx" style='color:#92D050'>here.</a></p>
 
-                <p><a class="waves-effect" href="#modal1" style='color:#92D050'>Instructions for the Abstracts</a></p>
+                <p><a class="modal-trigger waves-effect waves-light" href="#modal1" style='color:#92D050'>Instructions for the Abstracts</a></p>
 
                 <div id="modal1" class="modal .modal-close">
                     <div class="modal-content" align="justify">
+                      <h4> Call for Abstracts</h4>
 
                         <p>Abstracts can be submitted for symposium or poster presentation. It should be original work and submitted by the presenting author. The Abstracts are to be written in English and using MS Word format only. All abbreviations must be spelled out on first use. Abstracts should be no more than 300 words. </p>
-                        <br>
                         <p>The following elements should be included in the abstract:</p>
                         <ul class="collection">
                           <li class="collection-item">The title of the Abstract (keep it short for communication purposes)</li>
@@ -201,7 +201,8 @@
           $(document).ready(function() {
 
           $('.modal').modal();
-          
+          $('#modal1').modal('open');
+          $('.trigger-modal').modal();
           $('.dropdown-button').dropdown({
           inDuration: 300,
           outDuration: 225,
